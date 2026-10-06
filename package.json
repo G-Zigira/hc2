@@ -1,0 +1,16 @@
+{
+  "name": "hc-energy-mobility-site",
+  "version": "1.0.0",
+  "description": "Redesigned website for HC Energy Mobility - Rwanda's first nationwide EV fast-charge network",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}

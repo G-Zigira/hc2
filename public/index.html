@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>HC Energy Mobility | Clean Energy, Smart Mobility, Sustainable Future</title>
+  <meta name="description" content="HC Energy Mobility is building Rwanda's first nationwide DC fast-charging network, making electric vehicle ownership practical, affordable and reliable across the country." />
+  <meta name="theme-color" content="#06120d" />
+  <meta property="og:title" content="HC Energy Mobility | Driving Rwanda's Clean Energy Mobility" />
+  <meta property="og:description" content="Rwanda's first nationwide EV fast-charge network, starting in Kigali and expanding across all five provinces." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <a class="skip" href="#main">Skip to main content</a>
+  <div class="progress" id="progress" aria-hidden="true"></div>
+
+  <!-- NAV -->
+  <header class="nav" id="nav">
+    <div class="wrap nav__inner">
+      <a href="#top" class="brand" aria-label="HC Energy Mobility home">
+        <img src="/img/logo.jpeg" alt="HC Energy Mobility logo" class="brand__logo" onerror="this.style.display='none';document.querySelector('.brand__fallback').style.display='inline-flex'" />
+        <span class="brand__fallback" style="display:none"><span class="bolt">⚡</span> HC Energy Mobility</span>
+      </a>
+      <nav class="nav__links" id="navLinks" aria-label="Primary">
+        <a href="#purpose">Purpose</a>
+        <a href="#network">Network</a>
+        <a href="#team">Our Team</a>
+        <a href="#strengths">Strengths</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a href="#contact" class="btn btn--sm nav__cta">Get Started</a>
+      <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <canvas id="energy" aria-hidden="true"></canvas>
+      <div class="hero__glow" aria-hidden="true"></div>
+      <div class="wrap hero__grid">
+        <div class="hero__copy">
+          <span class="pill reveal"><i class="dot"></i> Kacyiru, Kigali · Building the national network</span>
+          <h1 class="reveal">Rwanda's first nationwide <span class="grad">EV fast-charge</span> network.</h1>
+          <p class="lead reveal">HC Energy Mobility is building Rwanda's first national DC fast-charging network, making electric vehicle ownership practical, affordable and reliable. Starting in Kigali and expanding across all five provinces.</p>
+          <div class="hero__actions reveal">
+            <a href="#network" class="btn">Explore the network <span class="arr">→</span></a>
+            <a href="#purpose" class="btn btn--ghost">Our purpose</a>
+          </div>
+          <ul class="hero__aligned reveal" aria-label="Aligned with">
+            <li>NDC targets</li><li>Vision 2050</li><li>MININFRA e-mobility plan</li>
+          </ul>
+        </div>
+
+        <div class="hero__visual reveal">
+          <div class="charger" id="charger">
+            <div class="charger__top">
+              <span class="charger__tag">DC FAST CHARGE</span>
+              <span class="charger__live"><i class="dot"></i> Live demo</span>
+            </div>
+            <div class="ring">
+              <svg viewBox="0 0 200 200" aria-hidden="true">
+                <defs>
+                  <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0" stop-color="#b6ff3c" />
+                    <stop offset="1" stop-color="#19e3b1" />
+                  </linearGradient>
+                </defs>
+                <circle cx="100" cy="100" r="84" class="ring__bg" />
+                <circle cx="100" cy="100" r="84" class="ring__fg" id="ringFg" />
+              </svg>
+              <div class="ring__label">
+                <strong id="pct">0</strong><span>%</span>
+                <small>battery</small>
+              </div>
+            </div>
+            <div class="charger__stats">
+              <div><small>Status</small><b id="chargeState">Connecting…</b></div>
+              <div><small>Stations planned</small><b>26</b></div>
+              <div><small>Provinces</small><b>5</b></div>
+            </div>
+            <div class="charger__bar"><i id="barFill"></i></div>
+          </div>
+          <div class="float float--a"><span>⚡</span> No driver more than a short drive from a fast charger</div>
+          <div class="float float--b"><span>🌍</span> Local energy, fair prices</div>
+        </div>
+      </div>
+      <a href="#purpose" class="scroll" aria-label="Scroll down"><i></i></a>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Clean Energy</span><span>Smart Mobility</span><span>Sustainable Future</span><span>DC Fast Charging</span><span>Green Growth</span><span>Climate-Resilient Development</span>
+        <span>Clean Energy</span><span>Smart Mobility</span><span>Sustainable Future</span><span>DC Fast Charging</span><span>Green Growth</span><span>Climate-Resilient Development</span>
+      </div>
+    </div>
+
+    <!-- STATS -->
+    <section class="stats">
+      <div class="wrap stats__grid">
+        <div class="stat reveal"><b data-count="26">0</b><span>Charging stations planned</span></div>
+        <div class="stat reveal"><b data-count="5">0</b><span>Provinces covered</span></div>
+        <div class="stat reveal"><b data-count="15" data-suffix="+">0</b><span>Years of leadership experience</span></div>
+        <div class="stat reveal"><b data-count="1" data-prefix="#">0</b><span>Nationwide fast-charge network in Rwanda</span></div>
+      </div>
+    </section>
+
+    <!-- PURPOSE -->
+    <section class="section" id="purpose">
+      <div class="wrap">
+        <div class="head reveal">
+          <span class="eyebrow">Purpose</span>
+          <h2>Accelerating Rwanda's shift to <span class="grad">clean transport</span>.</h2>
+          <p>HC Energy Mobility exists to accelerate Rwanda's transition to clean transportation by building, owning and operating the nation's most extensive electric vehicle charging infrastructure, making clean energy accessible, reliable and convenient for every Rwandan driver, in every province, every day.</p>
+        </div>
+
+        <div class="duo">
+          <article class="card card--glow reveal">
+            <div class="icon">🎯</div>
+            <h3>Our Mission</h3>
+            <p>To make electric vehicle ownership practical and affordable for every Rwandan by building the nation's first nationwide DC fast-charge network, placing 26 charging stations across all 5 provinces at trusted Source Oil Company forecourts, so that no Rwandan is more than a short drive from a fast charger.</p>
+          </article>
+          <article class="card card--glow reveal">
+            <div class="icon">🔭</div>
+            <h3>Our Vision</h3>
+            <p>A Rwanda where every motorist drives electric, where the energy powering transport is generated locally, priced fairly, and keeps foreign exchange inside Rwanda. We envision HC Energy Mobility as East Africa's model for privately-led EV infrastructure: replicable, scalable and profitable.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- NETWORK -->
+    <section class="section section--alt" id="network">
+      <div class="wrap">
+        <div class="head reveal">
+          <span class="eyebrow">The Network</span>
+          <h2>From Kigali to <span class="grad">every province</span>.</h2>
+          <p>Rwanda is ready for cleaner and more affordable mobility, but EV adoption cannot scale without reliable charging infrastructure. We are closing that gap by deploying fast chargers at trusted forecourt locations.</p>
+        </div>
+
+        <div class="net reveal">
+          <div class="net__tabs" role="tablist" aria-label="Provinces">
+            <button role="tab" class="is-active" data-p="kigali" aria-selected="true">Kigali City</button>
+            <button role="tab" data-p="north" aria-selected="false">Northern</button>
+            <button role="tab" data-p="south" aria-selected="false">Southern</button>
+            <button role="tab" data-p="east" aria-selected="false">Eastern</button>
+            <button role="tab" data-p="west" aria-selected="false">Western</button>
+          </div>
+          <div class="net__panel" id="netPanel">
+            <div class="net__text">
+              <h3 id="netTitle">Kigali City</h3>
+              <p id="netDesc">Where the network begins. Fast chargers at trusted forecourts give the capital's drivers the confidence to switch to electric.</p>
+              <span class="chip" id="netPhase">Starting point</span>
+            </div>
+            <div class="net__viz" aria-hidden="true">
+              <div class="nodes" id="nodes"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="steps">
+          <div class="step reveal"><span>01</span><h4>Deploy</h4><p>DC fast chargers installed at trusted Source Oil Company forecourts.</p></div>
+          <div class="step reveal"><span>02</span><h4>Connect</h4><p>Reliable grid connection and high-voltage installation built to a professional standard.</p></div>
+          <div class="step reveal"><span>03</span><h4>Expand</h4><p>Growth from Kigali across all five provinces, covering the whole country.</p></div>
+          <div class="step reveal"><span>04</span><h4>Sustain</h4><p>Locally generated energy, fair pricing, and foreign exchange kept inside Rwanda.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TEAM -->
+    <section class="section" id="team">
+      <div class="wrap">
+        <div class="head reveal">
+          <span class="eyebrow">Our Team</span>
+          <h2>The people <span class="grad">powering</span> the plan.</h2>
+          <p>Our dedicated team is here to guide you through every step of your journey towards sustainable success, aligning your business goals with a greener and more prosperous future.</p>
+        </div>
+
+        <div class="team">
+          <article class="member reveal">
+            <div class="avatar">HG</div>
+            <h3>Happy Gatera</h3>
+            <span class="role">Managing Director · Founder</span>
+            <p>A seasoned business operations leader with 15+ years spanning Telecommunications, Supply Chain, Commercial Facility Management, Human Resource Management, and Sports Eco-System Infrastructure Management and Commercialisation, with greening and sustainability a defining priority throughout.</p>
+            <p class="quote">His commitment to clean energy and climate action drives our mission: Rwanda's first nationwide EV charging network.</p>
+          </article>
+          <article class="member reveal">
+            <div class="avatar avatar--b">CN</div>
+            <h3>Dr. Chelsea Nyampinga</h3>
+            <span class="role">Chief Financial Officer · Co-Founder</span>
+            <p>A medical doctor and specialist surgeon with experience from leading international institutions including Montefiore Hospital, NY, USA. Brings surgical precision to financial stewardship, ensuring every franc of FONERWA support is deployed with full accountability and transparent reporting.</p>
+            <p class="quote">Her dedication to protecting life extends to combating climate change through Rwanda's clean transport transition.</p>
+          </article>
+          <article class="member reveal">
+            <div class="avatar avatar--c">AK</div>
+            <h3>Alex Kirenga</h3>
+            <span class="role">Technical Consultant</span>
+            <p>A licensed electrical engineer with deep expertise in high-voltage installation, grid connection procedures, and electrical maintenance.</p>
+            <p class="quote">Alex brings both the technical skills and the industry relationships that the network build requires.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- STRENGTHS -->
+    <section class="section section--alt" id="strengths">
+      <div class="wrap">
+        <div class="head reveal">
+          <span class="eyebrow">Our Strengths</span>
+          <h2>Built to <span class="grad">deliver</span>, at national scale.</h2>
+        </div>
+
+        <div class="bento">
+          <article class="tile tile--big reveal">
+            <span class="tile__n">26</span>
+            <h3>Rwanda's Largest EV Charging Network</h3>
+            <p>Twenty-six fast-charging stations across all five provinces, designed so that clean mobility is within reach of every driver.</p>
+          </article>
+          <article class="tile reveal"><div class="icon">🤝</div><h3>Trusted Institutional Partnerships</h3><p>Stations hosted at established Source Oil Company forecourts.</p></article>
+          <article class="tile reveal"><div class="icon">🏛️</div><h3>Government-Aligned Mission</h3><p>Contributing to NDC targets, Vision 2050 and the MININFRA e-mobility plan.</p></article>
+          <article class="tile reveal"><div class="icon">🛠️</div><h3>End-to-End Technical Expertise</h3><p>From high-voltage installation and grid connection to ongoing maintenance.</p></article>
+        </div>
+
+        <div class="skills reveal">
+          <span>Sustainable Energy Strategy</span>
+          <span>Strategic Business Planning</span>
+          <span>Market Research and Analysis</span>
+          <span>Sustainability Integration</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section" id="projects">
+      <div class="wrap">
+        <div class="head reveal">
+          <span class="eyebrow">Projects</span>
+          <h2>Clean energy, smart mobility, <span class="grad">sustainable projects</span>.</h2>
+          <p>We provide clean energy, smart mobility and sustainable project development solutions in Rwanda, supporting green growth, innovation and climate-resilient development.</p>
+        </div>
+
+        <div class="projects">
+          <article class="project reveal">
+            <div class="project__img p1"><span>⚡</span></div>
+            <div class="project__body">
+              <span class="chip">Flagship</span>
+              <h3>National DC Fast-Charge Network</h3>
+              <p>26 charging stations across all 5 provinces, hosted at trusted forecourts, beginning in Kigali.</p>
+            </div>
+          </article>
+          <article class="project reveal">
+            <div class="project__img p2"><span>🚗</span></div>
+            <div class="project__body">
+              <span class="chip">Mobility</span>
+              <h3>Smart E-Mobility Solutions</h3>
+              <p>Making electric vehicle ownership practical, affordable and reliable for Rwandan drivers.</p>
+            </div>
+          </article>
+          <article class="project reveal">
+            <div class="project__img p3"><span>🌱</span></div>
+            <div class="project__body">
+              <span class="chip">Sustainability</span>
+              <h3>Green Growth Development</h3>
+              <p>Sustainable project development that supports climate-resilient growth and keeps value inside Rwanda.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA + CONTACT -->
+    <section class="section section--cta" id="contact">
+      <div class="wrap contact">
+        <div class="contact__copy reveal">
+          <span class="eyebrow">Get In Touch</span>
+          <h2>Ready to power <span class="grad">Rwanda's</span> electric future?</h2>
+          <p>Ready to embark on your journey towards sustainable success? Contact us today to schedule a consultation.</p>
+          <ul class="contact__list">
+            <li><span>✉️</span><div><small>Projects</small><a href="mailto:projects@hcenergymobility.rw">projects@hcenergymobility.rw</a></div></li>
+            <li><span>✉️</span><div><small>General</small><a href="mailto:info@hcenergymobility.rw">info@hcenergymobility.rw</a></div></li>
+            <li><span>📍</span><div><small>Location</small><b>Kacyiru, Kigali, Rwanda</b></div></li>
+          </ul>
+        </div>
+
+        <form class="form reveal" id="contactForm" novalidate>
+          <label class="field"><span>Full name</span><input type="text" name="name" autocomplete="name" required placeholder="Your name" /></label>
+          <label class="field"><span>E-mail</span><input type="email" name="email" autocomplete="email" required placeholder="you@example.com" /></label>
+          <label class="field"><span>Message</span><textarea name="message" rows="5" required placeholder="How can we work together?"></textarea></label>
+          <input type="text" name="website" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true" />
+          <label class="check"><input type="checkbox" name="consent" /><span>I have read and understand the <a href="/privacy.html" target="_blank" rel="noopener">privacy policy</a>.</span></label>
+          <button type="submit" class="btn btn--block" id="submitBtn">Send message <span class="arr">→</span></button>
+          <p class="form__msg" id="formMsg" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="wrap footer__grid">
+      <div>
+        <div class="footer__brand"><span class="bolt">⚡</span> HC Energy Mobility</div>
+        <p>At HC Energy Mobility, we believe in the power of collaboration and innovation to drive positive change. Let's work together to make a difference and shape a brighter, more sustainable future.</p>
+      </div>
+      <div>
+        <h5>Explore</h5>
+        <a href="#purpose">Our Story</a>
+        <a href="#team">Our Team</a>
+        <a href="#strengths">Our Strengths</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact Us</a>
+      </div>
+      <div>
+        <h5>Contact</h5>
+        <a href="mailto:projects@hcenergymobility.rw">projects@hcenergymobility.rw</a>
+        <a href="mailto:info@hcenergymobility.rw">info@hcenergymobility.rw</a>
+        <span>Kacyiru, Kigali</span>
+      </div>
+    </div>
+    <div class="wrap footer__bar">
+      <span>© <span id="year"></span> hcenergymobility.rw. All rights reserved.</span>
+      <span><a href="/privacy.html">Privacy Policy</a> · <a href="/terms.html">Terms of Service</a></span>
+    </div>
+  </footer>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>
